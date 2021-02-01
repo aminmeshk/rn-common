@@ -1,19 +1,19 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import RnCommon from 'rn-common';
-
+import { HelloWorld } from 'rn-common';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
-  React.useEffect(() => {
-    RnCommon.multiply(3, 7).then(setResult);
-  }, []);
+  // React.useEffect(() => {
+  //   RnCommon.multiply(3, 7).then(setResult);
+  // }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <HelloWorld firstName="Amin" lastName="Meshk" separator=" " />
+      {/* <Text>Result: {result}</Text> */}
     </View>
   );
 }

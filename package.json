@@ -4,7 +4,7 @@
   "description": "Common components, tools and services for my React Native projects",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
-  "types": "lib/typescript/src/index.d.ts",
+  "types": "lib/typescript/index.d.ts",
   "react-native": "src/index",
   "source": "src/index",
   "files": [
@@ -114,7 +114,7 @@
     ],
     "rules": {
       "prettier/prettier": [
-        "error",
+        "warn",
         {
           "quoteProps": "consistent",
           "singleQuote": true,
@@ -122,6 +122,10 @@
           "trailingComma": "es5",
           "useTabs": false
         }
+      ],
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "warn"
       ]
     }
   },
