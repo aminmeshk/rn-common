@@ -1,14 +1,13 @@
 {
-  "name": "rn-common",
-  "version": "0.1.0",
+  "name": "@aminmeshk/rn-common",
+  "version": "0.1.3",
   "description": "Common components, tools and services for my React Native projects",
-  "main": "lib/commonjs/index",
+  "main": "lib/module/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
-  "react-native": "src/index",
+  "react-native": "lib/module/index",
   "source": "src/index",
   "files": [
-    "src",
     "lib",
     "android",
     "ios",
@@ -44,7 +43,7 @@
   },
   "homepage": "https://github.com/aminmeshk/rn-common#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "access": "public"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
@@ -144,7 +143,6 @@
     "source": "src",
     "output": "lib",
     "targets": [
-      "commonjs",
       "module",
       [
         "typescript",

@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import { nameBuilder } from './nameBuilder';
 
 /**
- * @param {{ firstName: string; lastName: string; separator: string | undefined }} props
+ * @param {{ firstName: string; lastName: string; separator?: string }} props
  */
 const HelloWorld = (props) => {
   return (

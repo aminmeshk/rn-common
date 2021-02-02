@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { HelloWorld } from 'rn-common';
+import { HelloWorld, MyButton } from '@aminmeshk/rn-common';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
@@ -12,7 +12,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <HelloWorld firstName="Amin" lastName="Meshk" separator=" " />
+      <HelloWorld firstName="Amin" lastName="Meshk" />
+      <MyButton title="Amin" />
       {/* <Text>Result: {result}</Text> */}
     </View>
   );

@@ -4,6 +4,6 @@
  * @param {string} lastName Last Name
  * @param {string} [sep=""] Seperator
  */
-export const nameBuilder = (firstname, lastName, sep) => {
+export const nameBuilder = (firstname, lastName, sep = ' ') => {
   return `${firstname}${sep ?? ' '}${lastName}`;
 };

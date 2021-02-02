@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "rn-common": ["./src/index"]
+      "@aminmeshk/rn-common": ["./src/"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
